@@ -1,0 +1,66 @@
+baseURL = "https://uswrma.com/"
+languageCode = "en-us"
+title = "Washington Rachmaninoff Musicians Association"
+theme = "PaperMod"
+
+# Output formats
+outputs = { home = ["HTML", "JSON"] }
+
+# Pagination
+[pagination]
+  pagerSize = 10
+
+# Markup settings
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true
+
+# Menu items
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 10
+
+[[menu.main]]
+  name = "About Us"
+  url = "/about-us/"
+  weight = 20
+
+[[menu.main]]
+  name = "Gallery"
+  url = "/gallery/"
+  weight = 30
+
+[[menu.main]]
+  name = "WIRMC"
+  url = "/wirmc/"
+  weight = 40
+
+[[menu.main]]
+  name = "Join Us"
+  url = "/join-us/"
+  weight = 50
+
+# Site parameters
+[params]
+  env = "production"
+  title = "Washington Rachmaninoff Musicians Association"
+  description = "Washington Rachmaninoff Musicians Association - Promoting classical music"
+  keywords = ["musicians", "association", "washington", "rachmaninoff", "classical music"]
+  author = "Washington Rachmaninoff Musicians Association"
+
+  # Theme settings
+  defaultTheme = "dark"
+  ShowBreadCrumbs = true
+  ShowPostNavLinks = true
+  ShowCodeCopyButtons = true
+  ShowToc = false
+  TocOpen = false
+  ShowShareButtons = false
+
+  # Social media (optional)
+  [params.social]
+    email = ""
+    github = ""
+    linkedin = ""
+    twitter = ""
