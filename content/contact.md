@@ -1,12 +1,15 @@
 ---
-title: "Join Us"
-date: 2026-04-05
+title: "Contact"
+date: 2026-07-27
 draft: false
+aliases: ["/join-us/"]
 ---
 
-<div class="hero-section" style="background: linear-gradient(135deg, rgba(10, 10, 30, 0.75) 0%, rgba(26, 26, 62, 0.75) 50%, rgba(42, 26, 62, 0.75) 100%);">
-  <h2>Join Us</h2>
-  <p>Be part of our global musical network. Whether you're a musician, educator, or supporter — we welcome you.</p>
+<div class="page-hero-light">
+  <span class="kicker">Get in Touch</span>
+  <h2 class="serif">Contact Us</h2>
+  <div class="gold-rule"></div>
+  <p>Whether you're a musician, educator, parent, or supporter — we welcome you.</p>
 </div>
 
 ## Ways to Get Involved
@@ -32,9 +35,9 @@ draft: false
 
 ---
 
-## Contact Us
+## Send Us a Message
 
-**Email:** [wirmc@hotmail.com](mailto:wirmc@hotmail.com)
+Messages go directly to our inbox: [wirmc@hotmail.com](mailto:wirmc@hotmail.com)
 
 <form action="https://formspree.io/f/REPLACE_WITH_FORM_ID" method="POST">
   <p>
@@ -57,3 +60,5 @@ draft: false
     <button type="submit">Send Message</button>
   </p>
 </form>
+
+<p style="margin-top:20px;"><a href="mailto:wirmc@hotmail.com" class="cta-button">Or Email Us Directly</a></p>

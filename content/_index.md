@@ -1,15 +1,25 @@
 ---
 title: "Washington Rachmaninoff Musicians Association"
-date: 2026-04-05
+date: 2026-07-27
 draft: false
 ---
 
-<div class="hero-section" style="background-image: url('https://static.wixstatic.com/media/214ec6_a10a687ada02905899947713544a686d.png/v1/fill/w_1151,h_717,al_c,q_90,enc_avif,quality_auto/214ec6_a10a687ada02905899947713544a686d.png'); background-size: cover; background-position: center;">
+<div class="hero-section" style="background-image: url('/images/hero/home-hero.jpg');">
   <div class="hero-overlay-content">
-    <h2>Washington Rachmaninoff<br>Musicians Association</h2>
+    <span class="hero-kicker">Nonprofit Arts Organization</span>
+    <h2>Nurturing the Next Generation<br>of Classical Musicians</h2>
     <p>Our mission is to make high-level music education accessible to talented individuals across the globe, regardless of background or geography.</p>
-    <a href="/wirmc/" class="cta-button">Discover WIRMC Competition</a>
+    <a href="/highlights/" class="cta-button">Annual Highlights</a>
+    <a href="/wirmc/" class="cta-button hero-ghost">Discover WIRMC</a>
   </div>
+</div>
+
+{{< latest-highlights >}}
+
+<div class="sec-head">
+  <span class="kicker">What We Do</span>
+  <h2 class="serif">Championing Artistry, Discipline &amp; Mentorship</h2>
+  <div class="gold-rule"></div>
 </div>
 
 <div class="features-grid">
@@ -27,37 +37,17 @@ draft: false
   </div>
 </div>
 
----
-
-## 2025 WIRMC Global Grand Final
-
-July in New York shone brightly with the sound of music. The 2025 Washington International Rachmaninoff Music Competition (WIRMC) Global Grand Final was held successfully in the world's music capital, bringing together outstanding young performers from across the globe. On an international stage, under the guidance of world-class juries, these talented musicians showcased their brilliance, artistry, and dedication.
-
-<div class="events-gallery">
-  <figure class="event-photo">
-    <img src="https://static.wixstatic.com/media/60af18_1c7fe3b9c1c84880b00cf1a8704cf8e2~mv2.jpg/v1/fill/w_1216,h_520,q_90,enc_avif,quality_auto/60af18_1c7fe3b9c1c84880b00cf1a8704cf8e2~mv2.jpg" alt="WIRMC 2025 Ceremony">
-    <figcaption>2025 Global Grand Final - Ceremony</figcaption>
-  </figure>
-  <figure class="event-photo">
-    <img src="https://static.wixstatic.com/media/60af18_9d44cb1972de458b8e13fb550e7a33f0~mv2.jpg/v1/fill/w_1216,h_520,q_90,enc_avif,quality_auto/60af18_9d44cb1972de458b8e13fb550e7a33f0~mv2.jpg" alt="WIRMC 2025 Performance">
-    <figcaption>2025 Global Grand Final - Performance</figcaption>
-  </figure>
+<div class="quote-strip">
+  <span class="kicker">Our Vision</span>
+  <h2>“Music is both an art and a craft — one that requires passion, precision, and purpose.”</h2>
+  <p>Founded to discover outstanding musical talent and connect them with world-class opportunities.</p>
+  <a href="/about-us/" class="cta-button">About the Association</a>
 </div>
 
----
-
-### Organizing Team Recognition
-
-A world-class event of this scale is only possible through exceptional leadership and teamwork.
-
-We extend our deepest appreciation to:
-
-- **Haoran Su** — for his invaluable assistance throughout the event, including logistics coordination, volunteer management, and on-site support
-
----
-
-<div style="text-align:center; padding: 2rem 0;">
-  <h3>Stay Connected</h3>
-  <p>For news and updates about upcoming events and competitions.</p>
-  <a href="/join-us/" class="cta-button">Join Our Mailing List</a>
+<div style="text-align:center; padding: 1rem 0 3rem;">
+  <span class="kicker">Get in Touch</span>
+  <h2 class="serif" style="margin: 4px 0 10px;">Questions, Partnerships &amp; Support</h2>
+  <div class="gold-rule"></div>
+  <p style="color: var(--muted); max-width: 560px; margin: 0 auto 24px;">We welcome musicians, educators, parents, and partner institutions.</p>
+  <a href="/contact/" class="cta-button">Contact Us</a>
 </div>

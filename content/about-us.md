@@ -4,8 +4,10 @@ date: 2026-04-05
 draft: false
 ---
 
-<div class="hero-section" style="background: linear-gradient(135deg, rgba(10, 10, 30, 0.8) 0%, rgba(26, 26, 62, 0.8) 50%, rgba(42, 26, 62, 0.8) 100%);">
-  <h2>About Us</h2>
+<div class="page-hero-light">
+  <span class="kicker">Who We Are</span>
+  <h2 class="serif">About Us</h2>
+  <div class="gold-rule"></div>
   <p>Discovering outstanding musical talent and connecting them with world-class opportunities.</p>
 </div>
 
@@ -42,7 +44,7 @@ We believe music is both an art and a craft — one that requires passion, preci
 
 <div class="team-section">
   <div class="team-member">
-    <img src="https://static.wixstatic.com/media/60af18_05fb86f884264cf59761fb57d16ef850~mv2.jpg/v1/fill/w_1236,h_1710,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/60af18_05fb86f884264cf59761fb57d16ef850~mv2.jpg" alt="Tian Gang, Co-Founder & Executive Director" class="team-portrait">
+    <img src="/images/team/tian-gang.jpg" alt="Tian Gang, Co-Founder & Executive Director" class="team-portrait">
     <div class="team-info">
       <h3>Tian Gang</h3>
       <p class="team-title">Co-Founder & Executive Director</p>

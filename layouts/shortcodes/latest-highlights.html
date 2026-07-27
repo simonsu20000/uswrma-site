@@ -1,0 +1,44 @@
+{{- /*
+  Homepage "Annual Highlights" block.
+  Automatically shows the newest year from the highlights section:
+  its video, summary, first 4 photos, and links to the archive.
+  Publishing a new year's page updates this block with no other edits.
+*/ -}}
+{{- $pages := where site.RegularPages "Section" "highlights" -}}
+{{- $sorted := sort $pages "Params.year" "desc" -}}
+{{- with index $sorted 0 -}}
+{{- $year := .Params.year -}}
+<section class="hl-home">
+  <div class="sec-head">
+    <span class="kicker">This Year at USWRMA</span>
+    <h2 class="serif">{{ $year }} Annual Highlights</h2>
+    <div class="gold-rule"></div>
+  </div>
+  <div class="hl-grid">
+    <div>
+      {{- $cover := printf "/images/highlights/%v/%s" $year (.Params.videocover | default "") -}}
+      {{- if not .Params.videocover }}{{ $cover = "" }}{{ end -}}
+      {{ partial "yt-block.html" (dict "id" (.Params.video | default "") "title" (printf "%v Highlights" $year) "cover" $cover) }}
+    </div>
+    <div class="hl-text">
+      <h3 class="serif">{{ .Title }}</h3>
+      <p>{{ .Params.summary }}</p>
+      <a class="btn btn-outline" href="{{ .RelPermalink }}">View Full {{ $year }} Highlights →</a>
+    </div>
+  </div>
+  {{- $dir := printf "static/images/highlights/%v" $year -}}
+  {{- $files := slice -}}
+  {{- with os.ReadDir $dir -}}{{- $files = first 4 . -}}{{- end -}}
+  <div class="photo-row">
+  {{- range $files -}}
+    {{- if not .IsDir -}}
+    {{- $caption := path.BaseName .Name | replaceRE `[-_]+` " " | title -}}
+    <figure><a href="{{ (index $sorted 0).RelPermalink }}"><img src="/images/highlights/{{ $year }}/{{ .Name }}" alt="{{ $caption }}" loading="lazy"></a></figure>
+    {{- end -}}
+  {{- end -}}
+  </div>
+  <div class="center-cta">
+    <a class="btn btn-outline" href="/highlights/">Browse Past Years →</a>
+  </div>
+</section>
+{{- end -}}

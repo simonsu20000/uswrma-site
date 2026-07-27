@@ -1,0 +1,24 @@
+{{- /*
+  Automatically renders every image found in static/images/highlights/<year>/.
+  Usage: {{< year-gallery year="2026" >}}  (year defaults to the page's `year` param)
+  Optional: limit="4" to show only the first N images.
+*/ -}}
+{{- $year := .Get "year" | default (printf "%v" .Page.Params.year) -}}
+{{- $limit := int (.Get "limit" | default 0) -}}
+{{- $dir := printf "static/images/highlights/%v" $year -}}
+{{- $files := slice -}}
+{{- with os.ReadDir $dir -}}{{- $files = . -}}{{- end -}}
+{{- if gt $limit 0 -}}{{- $files = first $limit $files -}}{{- end -}}
+<div class="gallery-grid">
+{{- range $files -}}
+{{- if not .IsDir -}}
+{{- $caption := path.BaseName .Name | replaceRE `[-_]+` " " | title -}}
+  <figure class="gallery-item">
+    <a href="/images/highlights/{{ $year }}/{{ .Name }}" target="_blank" rel="noopener">
+      <img src="/images/highlights/{{ $year }}/{{ .Name }}" alt="{{ $caption }}" loading="lazy">
+    </a>
+    <figcaption>{{ $caption }}</figcaption>
+  </figure>
+{{- end -}}
+{{- end -}}
+</div>

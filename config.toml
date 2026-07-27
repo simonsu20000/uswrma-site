@@ -22,45 +22,58 @@ outputs = { home = ["HTML", "JSON"] }
   weight = 10
 
 [[menu.main]]
-  name = "About Us"
+  name = "About"
   url = "/about-us/"
   weight = 20
 
 [[menu.main]]
-  name = "Gallery"
-  url = "/gallery/"
+  name = "WIRMC"
+  url = "/wirmc/"
   weight = 30
 
 [[menu.main]]
-  name = "WIRMC"
-  url = "/wirmc/"
+  name = "Highlights"
+  url = "/highlights/"
   weight = 40
 
 [[menu.main]]
-  name = "Join Us"
-  url = "/join-us/"
+  name = "Gallery"
+  url = "/gallery/"
   weight = 50
+
+[[menu.main]]
+  name = "News"
+  url = "/news/"
+  weight = 60
+
+[[menu.main]]
+  name = "Contact"
+  url = "/contact/"
+  weight = 70
 
 # Site parameters
 [params]
   env = "production"
   title = "Washington Rachmaninoff Musicians Association"
-  description = "Washington Rachmaninoff Musicians Association - Promoting classical music"
-  keywords = ["musicians", "association", "washington", "rachmaninoff", "classical music"]
+  description = "Washington Rachmaninoff Musicians Association — a nonprofit organization promoting classical music education worldwide"
+  keywords = ["musicians", "association", "washington", "rachmaninoff", "classical music", "nonprofit", "WIRMC"]
   author = "Washington Rachmaninoff Musicians Association"
+  mainSections = ["news"]
 
   # Theme settings
-  defaultTheme = "dark"
-  ShowBreadCrumbs = true
-  ShowPostNavLinks = true
-  ShowCodeCopyButtons = true
+  defaultTheme = "light"
+  disableThemeToggle = true
+  ShowBreadCrumbs = false
+  ShowPostNavLinks = false
+  ShowCodeCopyButtons = false
   ShowToc = false
   TocOpen = false
   ShowShareButtons = false
+  ShowReadingTime = false
 
   # Social media (optional)
   [params.social]
-    email = ""
+    email = "wirmc@hotmail.com"
     github = ""
     linkedin = ""
     twitter = ""

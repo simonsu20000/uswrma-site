@@ -4,10 +4,12 @@ date: 2026-04-05
 draft: false
 ---
 
-<div class="hero-section" style="background: linear-gradient(135deg, rgba(10, 10, 30, 0.75) 0%, rgba(26, 26, 62, 0.75) 50%, rgba(42, 26, 62, 0.75) 100%);">
-  <h2>WIRMC</h2>
+<div class="page-hero-light">
+  <span class="kicker">Our Flagship Event</span>
+  <h2 class="serif">WIRMC</h2>
+  <div class="gold-rule"></div>
   <p>The Washington International Rachmaninoff Music Competition — a launching platform for the next generation of pianists.</p>
-  <a href="https://www.wirmc.com" class="cta-button" target="_blank" rel="noopener">Visit WIRMC Official Site</a>
+  <p style="margin-top:18px;"><a href="https://www.wirmc.com" class="cta-button" target="_blank" rel="noopener">Visit WIRMC Official Site</a></p>
 </div>
 
 ## About the Competition
@@ -43,21 +45,23 @@ Each year, we welcome a diverse panel of internationally acclaimed judges and of
 
 ---
 
-## The 2025 Global Grand Final
+## Recent Global Finals
 
-**Held in New York City, USA**
-
-The Washington International Rachmaninoff Music Competition & Summer Camp Global Final was held successfully in 2025, bringing together outstanding young performers from across the globe in the world's music capital.
+Each year the competition culminates in a Global Final, bringing together outstanding young performers from across the globe.
 
 <div class="events-gallery">
   <figure class="event-photo">
-    <img src="https://static.wixstatic.com/media/60af18_1c7fe3b9c1c84880b00cf1a8704cf8e2~mv2.jpg/v1/fill/w_1216,h_520,q_90,enc_avif,quality_auto/60af18_1c7fe3b9c1c84880b00cf1a8704cf8e2~mv2.jpg" alt="WIRMC Competition Ceremony">
-    <figcaption>Opening Ceremony</figcaption>
+    <img src="/images/highlights/2026/finalists-on-stage.jpg" alt="WIRMC 2026 Global Finals — finalists on stage">
+    <figcaption>2026 Global Finals</figcaption>
   </figure>
   <figure class="event-photo">
-    <img src="https://static.wixstatic.com/media/60af18_9d44cb1972de458b8e13fb550e7a33f0~mv2.jpg/v1/fill/w_1216,h_520,q_90,enc_avif,quality_auto/60af18_9d44cb1972de458b8e13fb550e7a33f0~mv2.jpg" alt="Pianist Performance">
-    <figcaption>Featured Performance</figcaption>
+    <img src="/images/highlights/2025/opening-ceremony.jpg" alt="WIRMC 2025 Global Grand Final — opening ceremony">
+    <figcaption>2025 Global Grand Final</figcaption>
   </figure>
+</div>
+
+<div style="text-align:center; padding: 1rem 0;">
+  <a href="/highlights/" class="cta-button">See All Annual Highlights</a>
 </div>
 
 ---

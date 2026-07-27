@@ -1,0 +1,31 @@
+{{- define "main" }}
+<div class="post-content page-plain">
+  <div class="page-hero">
+    <span class="kicker">Year by Year</span>
+    <h1 class="serif">Annual Highlights</h1>
+    <div class="gold-rule"></div>
+    <p>{{ .Description | default "Videos and photographs from each year of WIRMC competitions, performances, and events." }}</p>
+  </div>
+  {{ .Content }}
+  <div class="year-cards">
+    {{- $sorted := sort (where site.RegularPages "Section" "highlights") "Params.year" "desc" -}}
+    {{- range $sorted }}
+    {{- $year := .Params.year }}
+    {{- $dir := printf "static/images/highlights/%v" $year -}}
+    {{- $cover := "" -}}
+    {{- with os.ReadDir $dir -}}
+      {{- range first 1 . -}}{{- $cover = printf "/images/highlights/%v/%s" $year .Name -}}{{- end -}}
+    {{- end }}
+    <a class="year-card" href="{{ .RelPermalink }}">
+      {{- if $cover }}<div class="year-card-img"><img src="{{ $cover }}" alt="{{ .Title }}" loading="lazy"></div>{{ end }}
+      <div class="year-card-body">
+        <span class="kicker">{{ $year }}</span>
+        <h2 class="serif">{{ .Title }}</h2>
+        <p>{{ .Params.summary | default .Summary }}</p>
+        <span class="faux-link">View videos &amp; photos →</span>
+      </div>
+    </a>
+    {{- end }}
+  </div>
+</div>
+{{- end }}

@@ -1,0 +1,6 @@
+{{- /*
+  YouTube facade embed: loads the iframe only on click, keeping pages fast.
+  Usage: {{< youtube-lite id="VIDEO_ID_OR_FULL_URL" title="..." cover="/images/..." >}}
+  If id is empty, renders a "video coming soon" placeholder using cover.
+*/ -}}
+{{ partial "yt-block.html" (dict "id" (.Get "id") "title" (.Get "title") "cover" (.Get "cover")) }}

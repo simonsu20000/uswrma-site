@@ -1,0 +1,25 @@
+{{- /* Reusable YouTube facade block. dict: id (url or id), title, cover */ -}}
+{{- $raw := .id | default "" -}}
+{{- $title := .title | default "Watch the video" -}}
+{{- $cover := .cover | default "" -}}
+{{- $id := $raw -}}
+{{- if in $raw "youtu" -}}
+  {{- $m := findRE `(?:v=|youtu\.be/|embed/|shorts/)([A-Za-z0-9_-]{6,})` $raw 1 -}}
+  {{- with index $m 0 -}}
+    {{- $id = replaceRE `(?:v=|youtu\.be/|embed/|shorts/)` "" . -}}
+  {{- end -}}
+{{- end -}}
+{{- if $id -}}
+<div class="yt-lite" data-id="{{ $id }}" role="button" tabindex="0" aria-label="Play video: {{ $title }}"
+     onclick="var d=this;d.innerHTML='&lt;iframe src=&quot;https://www.youtube-nocookie.com/embed/'+d.dataset.id+'?autoplay=1&quot; title=&quot;YouTube video&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;';d.classList.add('yt-active');">
+  <img src="https://i.ytimg.com/vi/{{ $id }}/maxresdefault.jpg" onerror="this.src='https://i.ytimg.com/vi/{{ $id }}/hqdefault.jpg';this.onerror=null;" alt="{{ $title }}" loading="lazy">
+  <div class="yt-play" aria-hidden="true"></div>
+  <span class="yt-caption">{{ $title }}</span>
+</div>
+{{- else -}}
+<div class="yt-lite yt-placeholder" aria-label="Video coming soon">
+  {{- if $cover }}<img src="{{ $cover }}" alt="{{ $title }}" loading="lazy">{{ end -}}
+  <div class="yt-play yt-play-muted" aria-hidden="true"></div>
+  <span class="yt-caption">{{ $title }} — video coming soon</span>
+</div>
+{{- end -}}
