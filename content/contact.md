@@ -39,7 +39,11 @@ aliases: ["/join-us/"]
 
 Messages go directly to our inbox: [simonsu2000@gmail.com](mailto:simonsu2000@gmail.com)
 
-<form action="https://formspree.io/f/REPLACE_WITH_FORM_ID" method="POST">
+<form action="https://formsubmit.co/6a03c561fb7adfea0b20c3577e5e75df" method="POST">
+  <input type="hidden" name="_subject" value="New message from uswrma.com">
+  <input type="hidden" name="_template" value="table">
+  <input type="hidden" name="_captcha" value="false">
+  <input type="text" name="_honey" style="display:none">
   <p>
     <label>First Name *<br>
     <input type="text" name="first_name" required></label>
