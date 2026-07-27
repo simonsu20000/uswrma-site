@@ -408,3 +408,7 @@ article.post-single:has(.hero-section) > .post-header {
 @media (max-width: 520px) {
   .gallery-grid, .events-gallery { grid-template-columns: 1fr; }
 }
+
+/* --- Logo emblem in header --- */
+.logo a { display: flex; align-items: center; gap: 12px; }
+.logo a img { border-radius: 50%; }

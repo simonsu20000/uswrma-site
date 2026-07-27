@@ -37,7 +37,7 @@ aliases: ["/join-us/"]
 
 ## Send Us a Message
 
-Messages go directly to our inbox: [wirmc@hotmail.com](mailto:wirmc@hotmail.com)
+Messages go directly to our inbox: [simonsu2000@gmail.com](mailto:simonsu2000@gmail.com)
 
 <form action="https://formspree.io/f/REPLACE_WITH_FORM_ID" method="POST">
   <p>
@@ -61,4 +61,4 @@ Messages go directly to our inbox: [wirmc@hotmail.com](mailto:wirmc@hotmail.com)
   </p>
 </form>
 
-<p style="margin-top:20px;"><a href="mailto:wirmc@hotmail.com" class="cta-button">Or Email Us Directly</a></p>
+<p style="margin-top:20px;"><a href="mailto:simonsu2000@gmail.com" class="cta-button">Or Email Us Directly</a></p>

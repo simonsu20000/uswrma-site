@@ -71,9 +71,15 @@ outputs = { home = ["HTML", "JSON"] }
   ShowShareButtons = false
   ShowReadingTime = false
 
+  # Logo in navigation bar
+  [params.label]
+    text = "Washington Rachmaninoff Musicians Association"
+    icon = "/images/logo/emblem-160.png"
+    iconHeight = 36
+
   # Social media (optional)
   [params.social]
-    email = "wirmc@hotmail.com"
+    email = "simonsu2000@gmail.com"
     github = ""
     linkedin = ""
     twitter = ""
