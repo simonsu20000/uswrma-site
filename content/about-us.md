@@ -54,11 +54,6 @@ We believe music is both an art and a craft — one that requires passion, preci
     <p>Coordinates the association's activities across North America — event and venue logistics, volunteer recruitment and management, and on-site operations for WIRMC finals. Serves as the primary point of contact for participating families and partner institutions in the region.</p>
   </div>
   <div class="feature-card">
-    <h3>Elena K.</h3>
-    <p class="team-title">Co-Founder · Artistic &amp; Jury Liaison</p>
-    <p>Works with the international jury panel on adjudication logistics, repertoire review, and artistic standards, ensuring every division is evaluated with professionalism and consistency.</p>
-  </div>
-  <div class="feature-card">
     <h3>David L.</h3>
     <p class="team-title">Co-Founder · Education Programs Manager</p>
     <p>Designs and organizes masterclasses, workshops, and the summer camp program, connecting young musicians with mentors and structured opportunities to grow between competition seasons.</p>
