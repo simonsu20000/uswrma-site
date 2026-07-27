@@ -412,3 +412,8 @@ article.post-single:has(.hero-section) > .post-header {
 /* --- Logo emblem in header --- */
 .logo a { display: flex; align-items: center; gap: 12px; }
 .logo a img { border-radius: 50%; }
+
+/* --- Team cards (no photos) --- */
+.team-cards .feature-card { text-align: left; }
+.team-cards .feature-card h3 { margin-bottom: 2px; }
+.team-cards .team-title { margin: 0 0 10px; }
