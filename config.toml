@@ -74,7 +74,7 @@ outputs = { home = ["HTML", "JSON"] }
   # Logo in navigation bar
   [params.label]
     text = "Washington Rachmaninoff Musicians Association"
-    icon = "/images/logo/emblem-160.png"
+    icon = "/images/logo/emblem-v2-160.png"
     iconHeight = 36
 
   # Social media (optional)

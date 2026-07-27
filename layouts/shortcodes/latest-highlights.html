@@ -32,8 +32,8 @@
   <div class="photo-row">
   {{- range $files -}}
     {{- if not .IsDir -}}
-    {{- $caption := path.BaseName .Name | replaceRE `[-_]+` " " | title -}}
-    <figure><a href="{{ (index $sorted 0).RelPermalink }}"><img src="/images/highlights/{{ $year }}/{{ .Name }}" alt="{{ $caption }}" loading="lazy"></a></figure>
+    
+    <figure><a href="{{ (index $sorted 0).RelPermalink }}"><img src="/images/highlights/{{ $year }}/{{ .Name }}" alt="WIRMC highlights" loading="lazy"></a></figure>
     {{- end -}}
   {{- end -}}
   </div>

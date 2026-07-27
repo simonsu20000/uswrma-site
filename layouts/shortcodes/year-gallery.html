@@ -12,12 +12,10 @@
 <div class="gallery-grid">
 {{- range $files -}}
 {{- if not .IsDir -}}
-{{- $caption := path.BaseName .Name | replaceRE `[-_]+` " " | title -}}
   <figure class="gallery-item">
     <a href="/images/highlights/{{ $year }}/{{ .Name }}" target="_blank" rel="noopener">
-      <img src="/images/highlights/{{ $year }}/{{ .Name }}" alt="{{ $caption }}" loading="lazy">
+      <img src="/images/highlights/{{ $year }}/{{ .Name }}" alt="WIRMC {{ $year }}" loading="lazy">
     </a>
-    <figcaption>{{ $caption }}</figcaption>
   </figure>
 {{- end -}}
 {{- end -}}
